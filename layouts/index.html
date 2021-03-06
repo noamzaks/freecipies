@@ -1,0 +1,26 @@
+{{ define "head-extra" }}
+<title>{{ .Site.Title }}</title>
+{{ end }}
+
+{{ define "main" }}
+<div class="text-center">
+    <div class="text-lg">
+        <p>Welcome to freecipies!</p>
+        <p>This is a website for free recipes.</p>
+        <p>All recipes and pages are 100% free and licensed under the GNU General Public License, and
+            100% free of JavaScript.</p>
+        <p>The only piece of JavaScript in the pages is <code>onclick="location.href = 'URL'"</code> in
+            the cards.</p>
+        <p>If you have some way to do this without, I'd gladly switch.</p>
+    </div>
+    <div class="cursor-pointer inline-block p-4 mt-5 mb-40 bg-gray-200 rounded-xl mx-auto shadow-lg transition duration-500 transform hover:scale-105 hover:shadow-2xl"
+        onclick="location.href = 'https://github.com/noamzaks/freecipies'">
+        <h1 class="inline-block text-3xl">
+            GitHub
+        </h1>
+        <img src="/GitHub-Mark-64px.png" class="flex mx-auto" height=35 width=35 />
+        <p>The source code of the website is hosted here.</p>
+        <p>Submit a pull request if you have a good recipe!</p>
+    </div>
+</div>
+{{ end }}

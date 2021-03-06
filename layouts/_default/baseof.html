@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+        {{- partial "head.html" . -}}
+        {{- block "head-extra" . }}{{- end }}
+    </head>
+    <body class="flex flex-col h-screen">
+        <div class="flex-none w-full">
+            {{- partial "header.html" . -}}
+        </div>
+        <div id="content" class="container px-5 pt-2 mx-auto overflow-y-auto md:px-0 w-100">
+            {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

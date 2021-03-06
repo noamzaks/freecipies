@@ -1,0 +1,10 @@
+<div class="w-full bg-blue-300 rounded-xl p-3 my-3">
+    <h3 class="font-bold text-center text-3xl">Steps</h3>
+    <ul class="text-gray-900 list-decimal mx-5">
+        {{ range split .Inner "--" }}
+            <li class="mt-2">
+                {{ . }}
+            </li>
+        {{ end }}
+    </ul>
+</div>

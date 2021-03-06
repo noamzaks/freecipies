@@ -1,0 +1,10 @@
+<div class="w-full bg-green-800 rounded-xl p-3 my-5 text-center">
+    <h3 class="text-white font-bold text-3xl">List of Ingredients</h3>
+    <ul class="text-gray-200">
+        {{ range split .Inner "\n" }}
+            <li>
+                {{ . }}
+            </li>
+        {{ end }}
+    </ul>
+</div>
